@@ -87,11 +87,11 @@ body {
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
 }
 
-.wrapper .facebook:hover,
-.wrapper .facebook:hover .tooltip,
-.wrapper .facebook:hover .tooltip::before {
-    background-color: #3b5999;
-    color:            #ffffff;
+.wrapper .telegram,
+.wrapper .telegram .tooltip,
+.wrapper .telegram .tooltip::before {
+    background-color: #ffffff;
+    color:            #0088cc;
 }
 
 .wrapper .telegram:hover,
@@ -101,31 +101,31 @@ body {
     color:            #ffffff;
 }
 
-.wrapper .twitter:hover,
-.wrapper .twitter:hover .tooltip,
-.wrapper .twitter:hover .tooltip::before {
-    background-color: #46c1f6;
+.wrapper .linkedin,
+.wrapper .linkedin .tooltip,
+.wrapper .linkedin .tooltip::before {
+    background-color: #ffffff;
+    color:            #0e76a8;
+}
+
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+    background-color: #0e76a8;
     color:            #ffffff;
 }
 
-.wrapper .instagram:hover,
-.wrapper .instagram:hover .tooltip,
-.wrapper .instagram:hover .tooltip::before {
-    background-color: #e1306c;
-    color:            #ffffff;
+.wrapper .github,
+.wrapper .github .tooltip,
+.wrapper .github .tooltip::before {
+    background-color: #ffffff;
+    color:            #333333;
 }
 
 .wrapper .github:hover,
 .wrapper .github:hover .tooltip,
 .wrapper .github:hover .tooltip::before {
     background-color: #333333;
-    color:            #ffffff;
-}
-
-.wrapper .youtube:hover,
-.wrapper .youtube:hover .tooltip,
-.wrapper .youtube:hover .tooltip::before {
-    background-color: #de463b;
     color:            #ffffff;
 }
 
