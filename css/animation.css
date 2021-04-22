@@ -1,31 +1,4 @@
-/*
-    Auther: Abdelrhman Said
-    https://codepen.io/abdelrhmansaid/pen/OJRNOpQ
-*/
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
-* {
-    margin:     0;
-    padding:    0;
-    box-sizing: border-box;
-}
-
-*:focus,
-*:active {
-    outline:                     none !important;
-    -webkit-tap-highlight-color: transparent;
-}
-
-html,
-body {
-    display:     grid;
-    height:      100%;
-    width:       100%;
-    font-family: "Poppins", sans-serif;
-    place-items: center;
-    background:  linear-gradient(315deg, #ffffff, #d7e1ec);
-}
 
 .wrapper {
     display: inline-flex;
@@ -37,9 +10,9 @@ body {
     border-radius:    50%;
     padding:          15px;
     margin:           10px;
-    width:            50px;
-    height:           50px;
-    font-size:        18px;
+    width:            15px;
+    height:           15px;
+    font-size:        20px;
     display:          flex;
     justify-content:  center;
     align-items:      center;
@@ -115,6 +88,20 @@ body {
     color:            #ffffff;
 }
 
+.wrapper .twitch,
+.wrapper .twitch .tooltip,
+.wrapper .twitch .tooltip::before {
+    background-color: #ffffff;
+    color:            #9147FF;
+}
+
+.wrapper .twitch:hover,
+.wrapper .twitch:hover .tooltip,
+.wrapper .twitch:hover .tooltip::before {
+    background-color: #9147FF;
+    color:            #ffffff;
+}
+
 .wrapper .github,
 .wrapper .github .tooltip,
 .wrapper .github .tooltip::before {
@@ -127,24 +114,4 @@ body {
 .wrapper .github:hover .tooltip::before {
     background-color: #333333;
     color:            #ffffff;
-}
-
-/* Subscribe Me */
-
-.subscribe {
-    position:         absolute;
-    bottom:           5%;
-    left:             50%;
-    transform:        translate(-50%, -5%);
-    text-decoration:  none;
-    font-size:        14px;
-    background-color: #e62017;
-    color:            #ffffff;
-    border-radius:    50px;
-    padding:          5px 15px;
-    transition:       all 0.2s ease-in-out;
-}
-
-.subscribe:hover {
-    border-radius: 5px;
 }

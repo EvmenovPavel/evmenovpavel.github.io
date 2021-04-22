@@ -1,0 +1,60 @@
+.padded {
+    padding: 3em;
+}
+
+@media only screen and (max-width: 641px) {
+    .padded {
+        padding: 25px;
+    }
+}
+
+#initial-loader {
+    z-index: 999;
+}
+
+#loader-text {
+    color:          #1ff042;
+    display:        block;
+    font-family:    "AndaleMono", monospace;
+    font-weight:    bold;
+    text-transform: uppercase;
+    font-size:      0.9em;
+    letter-spacing: 0.15em;
+    text-shadow:    0 0 2px rgba(31, 240, 66, 0.75);
+}
+
+@media only screen and (max-width: 641px) {
+    #loader-text {
+        font-size: 0.6em;
+    }
+}
+
+#loader-text:before {
+    content: "> ";
+}
+
+#loader-text:after {
+    display:           inline-block;
+    vertical-align:    -0.15em;
+    width:             0.75em;
+    height:            1em;
+    margin-left:       5px;
+    background:        #1ff042;
+    box-shadow:        1px 1px 1px rgba(31, 240, 66, 0.65), -1px -1px 1px rgba(31, 240, 66, 0.65), 1px -1px 1px rgba(31, 240, 66, 0.65), -1px 1px 1px rgba(31, 240, 66, 0.65);
+    -webkit-animation: cursor-blink 1.25s steps(1) infinite;
+    -moz-animation:    cursor-blink 1.25s steps(1) infinite;
+    animation:         cursor-blink 1.25s steps(1) infinite;
+    content:           "";
+}
+
+#initial-loader {
+    position:   fixed;
+    top:        0;
+    left:       0;
+    right:      0;
+    width:      100%;
+    height:     100%;
+    background: black;
+    opacity:    1;
+    transition: opacity 300ms ease-out;
+}
